@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="main.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>MomsNoms</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .highlight {
+      border: 2px solid #ffc107;
+      transition: border 0.5s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+    
+  <!-- Top Navbar -->
+  <nav class="top-navbar">
+    <div class="logo">MomNoms</div>
+    <ul class="nav-links">
+      <li><a href="#" id="homeLink">Home</a></li>
+      <li><a href="#footer">Contact Us</a></li>
+      <li><a href="#" id="signOutLink">Sign Out</a></li>
+    </ul>
+  </nav>
+
+    <!-- 
+    <div class="profile-icons">
+      <a class="cart" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+      <a class="user" href="#profile" id="profileLink"><ion-icon name="person-outline"></ion-icon></a>
+    </div>
+    -->
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input action="search.php" method="Get type="text" id="searchInput" placeholder="What do you want to eat?" />
+    <button class="search-btn" id="searchBtn">Search</button>
+    <form action="search.php" method="GET">
+    </form>
+
+  </div>
+
+  <!-- Menu Category -->
+  <section class="menu-category">
+    <h2>Menu Category</h2>
+    <div class="filter-wrapper">
+      <div class="filter-card" data-category="biryani">Biryani</div>
+      <div class="filter-card" data-category="rice">Rice & Curry</div>
+      <div class="filter-card" data-category="drinks">Drinks</div>
+      <div class="filter-card" data-category="vegetable">Vegetable</div>
+    </div>
+  </section>
+
+  <!-- Choose Order Section -->
+  <section class="choose-order">
+    <h2>Choose Order</h2>
+    <div class="detail-wrapper">
+      <div class="detail-card" data-name="biryani" id="biryani">
+        <img class="detail-img" src="biryani.jpg" alt="Biryani">
+        <div class="detail-desc">
+          <h4>Biryani Special</h4>
+          <p>Delicious homemade biryani served with salad.</p>
+          <p class="price">BDT৳250.00</p>
+        </div>
+      </div>
+
+      <div class="detail-card" data-name="rice" id="rice">
+        <img class="detail-img" src="rice and curry .jpg" alt="Rice and Curry">
+        <div class="detail-desc">
+          <h4>Rice & Curry</h4>
+          <p>Steamed rice with flavorful fish curry.</p>
+          <p class="price">BDT৳200.00</p>
+        </div>
+      </div>
+
+      <div class="detail-card" data-name="drinks" id="drinks">
+        <img class="detail-img" src="coffee .jpg" alt="Drinks">
+        <div class="detail-desc">
+          <h4>Fresh Drinks</h4>
+          <p>Refreshing drinks to cool your day.</p>
+          <p class="price">BDT৳25.00</p>
+        </div>
+      </div>
+
+      <div class="detail-card" data-name="vegetable" id="vegetable">
+        <img class="detail-img" src="salad .jpg" alt="Vegetable Dish">
+        <div class="detail-desc">
+          <h4>Mixed Vegetable</h4>
+          <p>Healthy and tasty seasonal vegetable dish.</p>
+          <p class="price">BDT৳45.00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+
+  <!-- Profile Section 
+  <section id="profile" style="padding: 40px; background: #f0f0f0;">
+    <h2>Your Profile</h2>
+    <p>This is your profile section.</p>
+  </section>
+  -->
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-contact">
+      <p><b><Address> Address: lane-10, house-6, Floor-4th | Mirpur-10(beside Popular Hospital),Dhaka. </Address></b></p>
+      <p><b>Email: momnoms6066@gmail.com</b></p>
+      <p><b>Contact us: +8801XXXXXXXXXX</b></p>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 momsnoms. All rights reserved.</p>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.2/dist/ionicons/ionicons.js"></script>
