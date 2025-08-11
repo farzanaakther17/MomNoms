@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <h1><b><i> WELCOME TO MOMNOMS! </i></b></h1><br>
+    <h4><b><i>Homemade flavors, delivered to your door </i></b></h4>
+
+    <div class="signup-container">
+        <form id="signupForm" action="signup.php" method="POST">
+            <h2>Sign up</h2>
+            
+            <input type="text" id="fullName" name="fullName" placeholder="Enter full name" required>
+            <div class="error-message" id="fullNameError"></div>
+
+
+            <input type="email" id="email" name="email" placeholder="Enter email address" required>
+            <div class="error-message" id="emailError"></div>
+
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            <div class="error-message" id="passwordError"></div>
+
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required>
+            <div class="error-message" id="confirmPasswordError"></div>
+
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number" required>
+            <div class="error-message" id="phoneNumberError"></div>
+
+            <button type="submit"> Sign Up </button>
+        </form>
+        
+        <!-- Toggle link -->
+        <br><p id="toggle-to-login">Already have an account? <a href="login.html"> Log In!</a></p>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
